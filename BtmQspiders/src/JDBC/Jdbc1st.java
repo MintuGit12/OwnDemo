@@ -3,6 +3,7 @@ import java.sql.*;
 public class Jdbc1st {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		System.out.println("its from github");
 		Class.forName("oracle.jdbc.OracleDriver");
 Connection conn = DriverManager.getConnection("jdbc:oracle:oci:@XE","SCOTT","TIGER");
 	Statement st=conn.createStatement();
